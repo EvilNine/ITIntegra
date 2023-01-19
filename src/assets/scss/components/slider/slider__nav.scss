@@ -1,0 +1,30 @@
+.slider__nav {
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    transform: translateY(-50%);
+    z-index: 2;
+    gap: .5rem;
+    &-item {
+        border: 0;
+        background-color: $slider__nav-bg;
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: $transition-slide-nav;
+        &:hover {
+            transform: scale(1.5);
+        }
+        &:focus, &:active {
+            outline: none;
+        }
+        &.active {
+            background-color: $slider__nav-bg-active;
+        }
+        
+    }
+}

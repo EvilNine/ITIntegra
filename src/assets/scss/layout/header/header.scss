@@ -1,0 +1,7 @@
+.header {
+    background-color: $header-bg;
+    height: 90px;
+    @include media-breakpoint-up(sm) {
+        height: 300px;
+    }
+}
